@@ -6,15 +6,26 @@ class Forgotpass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Color.fromARGB(255, 112, 190, 114),
+      color: Color.fromARGB(255, 186, 217, 194),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 75, horizontal: 16),
         child: Column(
           children: [
-            Text("Forgot Password?",
-            style: TextStyle(fontWeight: FontWeight.bold,
-            fontSize: 28,
-            color: Colors.black),),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 248, 165, 40)
+              ),
+              child: Text(
+                "Forgot Password?",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28,
+                    color: Colors.black),
+              ),
+              onPressed: () {
+                return null;
+              },
+            ),
             SizedBox(
               height: 30,
             ),
@@ -33,25 +44,26 @@ class Forgotpass extends StatelessWidget {
                 labelText: "Enter Registered email-id",
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 30,
             ),
             ElevatedButton(
-      child: Text(
-        "Send Verifiaction link",
-        style: TextStyle(fontWeight: FontWeight.bold),
-      ),
-      onPressed: () {
-      return null;
-      },
-    style: ElevatedButton.styleFrom(
-          primary: Color.fromARGB(255, 248, 165, 40), onPrimary: Colors.black),
-   ),
+              child: Text(
+                "Send Verifiaction link",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              onPressed: () {
+                return null;
+              },
+              style: ElevatedButton.styleFrom(
+                  primary: Color.fromARGB(255, 248, 165, 40),
+                  onPrimary: Colors.black,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20))),
+            ),
           ],
         ),
       ),
-       
     );
-    
   }
 }
