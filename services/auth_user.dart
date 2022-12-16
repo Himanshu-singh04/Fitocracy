@@ -23,3 +23,4 @@ class AuthUser {
       isEmailVerified: user.emailVerified,
       isPhoneNumber: (user.phoneNumber != null) ? true : false);
 }
+// 
