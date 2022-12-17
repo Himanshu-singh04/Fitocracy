@@ -2,9 +2,8 @@
 
 import 'dart:ui';
 
-import 'package:fitocracy_app/main.dart';
-import 'package:fitocracy_app/reusable_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/additional%20pages/reusable_card.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 enum Gender { male, female }

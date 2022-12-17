@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_application_1/pages/forgotpassword.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
-import 'package:flutter_application_1/pages/new_calculator.dart';
 import 'package:flutter_application_1/pages/registration.dart';
 import 'package:flutter_application_1/pages/stash.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../pages/new_calculator.dart';
 
 void main() {
   runApp(MyApp());
