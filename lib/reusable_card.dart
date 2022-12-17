@@ -18,10 +18,10 @@ class ReusableCard extends StatelessWidget {
         onPressed();
       },
       child: Container(
+          child: child,
           margin: const EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20.0), color: colour),
-          child: child),
+              borderRadius: BorderRadius.circular(20.0), color: colour)),
     );
   }
 }
